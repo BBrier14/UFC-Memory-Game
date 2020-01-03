@@ -1,8 +1,9 @@
+//----- Imports -----//
 import React, { Component } from 'react';
-
 import FighterBox from './fighterbox';
 import Score from './score';
 
+//----- Array and Corresponding Function -----//
 const shuffleArray = arr => (
     arr
     .map(a => [Math.random(), a])
@@ -52,3 +53,17 @@ const initFighters = [
         clicked: false
     }
 ]
+
+//----- State Change -----//
+export default class Board extends Component {
+    constructor(props){
+        super(props);
+
+        this.state = {
+            user: {
+                score: 0
+            },
+            characters: shuffleArray(initFighters)
+        }
+    }
+}
