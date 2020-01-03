@@ -88,4 +88,18 @@ export default class Board extends Component {
             });
         }
     }
+
+    //----- Render ------//
+    render(){
+        return (
+            <div className="Main">
+                <Score
+                score={this.state.user.score} />
+                <FighterBox
+                fighters={this.state.fighters}
+                onFighterClick={this.onFighterClick} />
+            </div>
+        )
+    }
+
 }
