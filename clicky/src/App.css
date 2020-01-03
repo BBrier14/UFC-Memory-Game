@@ -12,15 +12,15 @@ body {
   color: white;
 }
 
-.fighter-box{
-    height: 65vh;
-    padding: 20px 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+.fighter-box {
+  height: 65vh;
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
-.score-keeper{
+.score-keeper {
   background-color: #282c34;
   display: flex;
   flex-direction: column;
