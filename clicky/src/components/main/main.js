@@ -51,6 +51,11 @@ const initFighters = [
         name: 'Zabit Magnomedsharipov',
         img: 'img/fighters/zabit.png',
         clicked: false
+    },
+    {
+        name: "Jorge Masvidal",
+        img: 'img/fighters/jorge.png',
+        clicked: false
     }
 ]
 
