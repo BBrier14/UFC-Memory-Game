@@ -64,6 +64,28 @@ export default class Board extends Component {
                 score: 0
             },
             characters: shuffleArray(initFighters)
+        };
+    }
+
+    onFighterClick = ( index ) =>{
+        if(!this.state.fighters[index].clicked){
+            this.setState({
+                fighters: shuffleArray(this.state.fighters.map((fighter, current) => {
+                    return(current === index)?{...fighter, clicked:true}: fighter
+                })),
+                user: {
+                    ...this.state.user,
+                    score: this.state.user.score + 1
+                }
+            });
+        } else {
+            this.setState({
+                figthers: shuffleArray(this.state.fighters.map(fighter => {return {...fighter, clicked:false}})),
+                user: {
+                    ...this.state.user,
+                    score: 0
+                }
+            });
         }
     }
 }
