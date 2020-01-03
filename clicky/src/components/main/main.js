@@ -55,7 +55,7 @@ const initFighters = [
 ]
 
 //----- State Change -----//
-export default class Board extends Component {
+export default class Main extends Component {
     constructor(props){
         super(props);
 
@@ -63,7 +63,7 @@ export default class Board extends Component {
             user: {
                 score: 0
             },
-            characters: shuffleArray(initFighters)
+            fighters: shuffleArray(initFighters)
         };
     }
 
