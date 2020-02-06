@@ -1,5 +1,5 @@
 # clickygame
-https://bbrier14.github.io/clickygame/
+https://bbrier14.github.io/UFC-Memory-Game/
 ## Overview
 The UFC Fighter Clicky Game is a simple React application. In it, the user will engage in a memory game. The goal is to click on photos of fighter that the user has not clicked on previously, aiming to get the highest score possible. 
 ## How It Works
